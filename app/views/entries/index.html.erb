@@ -1,0 +1,13 @@
+<%= @questionnaire.remaining %> COOOOKIES remaining
+
+<%= semantic_form_for @entry do |f| %>
+  <%= f.inputs do %>
+    <%= f.input :twitter %>
+    <%= f.input :name %>
+    <%= f.input :street %>
+    <%= f.input :suburb %>
+    <%= f.input :city %>
+    <%= f.input :country, :hint => 'Just NZ for now', :input_html => { :readonly => true } %>
+  <% end %>
+  <%= f.buttons %>
+<% end %>
