@@ -68,7 +68,7 @@ form.formtastic fieldset > ol > li p.inline-errors {
   margin: -2.4em 0 0 345px;
 }
 
-.about {
+form.formtastic .about {
   color: #6F4E2B;
   margin-bottom: 1em;
 }
