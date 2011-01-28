@@ -38,8 +38,8 @@ header {
 
 article {
   background: #e6e0cc;
-  padding: 10px 20px 20px !important;
-  margin: 0 auto !important;
+  padding: 10px 20px 20px;
+  margin: 0 auto;
   width: 360px;
 }
 
@@ -50,29 +50,25 @@ footer {
   text-align: center;
 }
 
-.inline-hints {
-  color: #AC9D83 !important;
+form.formtastic fieldset > ol > li p.inline-hints {
+  color: #AC9D83;
   font-size: 0.7em;
   position: absolute;
-  margin: 0 0 0 90px !important;
-  line-height: 1.6em !important;
+  margin: 0 0 0 90px;
+  line-height: 1.6em;
   width: 360px;
 }
 
-.inline-errors {
+form.formtastic fieldset > ol > li p.inline-errors {
   background: url(/images/error_flag.png) no-repeat 0 50%;
-  color: #F0C9C3 !important;
+  color: #F0C9C3;
   position: absolute;
-  font-size: 0.7em !important;
-  padding: 0.2em 1em 0.2em 2em !important;
-  margin: -2.4em 0 0 345px !important;
+  font-size: 0.7em;
+  padding: 0.2em 1em 0.2em 2em;
+  margin: -2.4em 0 0 345px;
 }
 
 .about {
   color: #6F4E2B;
-  margin-bottom: 1em !important;
-}
-
-.inline-errors {
-  font-size: 0.8em;
+  margin-bottom: 1em;
 }
