@@ -1,13 +1,16 @@
-<%= @questionnaire.remaining %> COOOOKIES remaining
-
 <%= semantic_form_for @entry do |f| %>
+  <p class="about">
+    Enter address, receive cookie. Cookie cookie cookie.
+  </p>
   <%= f.inputs do %>
-    <%= f.input :twitter %>
+    <%= f.input :twitter, :hint => 'One cookie per tweetperson.' %>
     <%= f.input :name %>
     <%= f.input :street %>
     <%= f.input :suburb %>
     <%= f.input :city %>
-    <%= f.input :country, :hint => 'Just NZ for now', :input_html => { :readonly => true } %>
+    <%= f.input :country, :hint => 'Just NZ for now.', :input_html => { :readonly => true } %>
   <% end %>
-  <%= f.buttons %>
+  <%= f.buttons do %>
+    <input type="image" src="/images/send_button.png" alt="Send me cooookie">
+  <% end %>
 <% end %>

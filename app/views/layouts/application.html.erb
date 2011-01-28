@@ -9,7 +9,8 @@
 <body>
 
   <header>
-    Internet COOOOOKIES
+    <%= image_tag 'logo.png', :alt => 'Internet Cookies', :class => 'logo' %>
+    <%= content_tag :div, @questionnaire.remaining, :class => 'remaining' %>
   </header>
   
   <article>
